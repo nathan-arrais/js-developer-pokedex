@@ -6,6 +6,7 @@
     list-style: none;
 }
 
+
 .normal {
     background-color: #a6a877;
 }
@@ -106,7 +107,7 @@
     justify-content: space-between;
 }
 
-.pokemon .detail .types {
+.pokemon .detail .types, .more {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -144,6 +145,31 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+}
+
+.types, .more{
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.types span, .more span, .more li{
+    color: #fff;
+    font-size: .625rem;
+}
+
+.more{
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.more li{
+    text-transform: capitalize;
+}
+
+.base{
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 @media screen and (min-width: 380px) {

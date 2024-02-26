@@ -4,5 +4,10 @@ class Pokemon {
     name;
     type;
     types = [];
+    ability;
+    abilities = [];
+    base_experience;
+    weight;
+    height;
     photo;
 }
